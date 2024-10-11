@@ -1,0 +1,44 @@
+/* Estilo orokorrak */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4dfc4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Grid-en estilo orokorra */
+.grid-layout {
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr); /* 3 zutabe tamaina berdinekoak */
+    grid-template-columns: auto auto auto; /* 3 zutabe tamaina berdinekoak */
+    grid-template-rows: auto; /* 3 zutabe tamaina berdinekoak */
+    justify-content: stretch;
+    grid-gap: 10px; /* Kaxen arteko hutsunea */
+    padding: 20px;
+    background-color: #85e085; 
+    border: 1px solid black; 
+    width: 80%;
+    margin: 20px auto; /* Grid-a zentratu */
+}
+
+.grid-layout div {
+    background-color: lightgray;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Kaxa bakoitzaren klaseak, bakarka pertxonalizatu nahi izanez gero) */
+.k1, .k2, .k3, .k4, .k5, .k6, .k7, .k8, .k9, .k10, .k11, .k12 {
+    background-color: lightgray;
+}

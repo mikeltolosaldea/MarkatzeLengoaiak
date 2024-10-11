@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas principales */
+    grid-template-rows: auto auto 1fr auto; /* Filas: auto para cabecera/menu, luego contenido/aside, y pie de página */
+    grid-template-areas: 
+        "cabecera cabecera"
+        "menu menu"
+        "contenido barra-lateral"
+        "pie-pagina pie-pagina";
+    gap: 10px;
+    height: 100vh; /* 100% del alto de la ventana */
+    padding: 10px;
+    border: 3px solid black; /* Borde general */
+}
+
+/* Estilos de las secciones */
+.cabecera {
+    grid-area: cabecera;
+    background-color: #99ccff;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #ffffcc;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.contenido {
+    grid-area: contenido;
+    background-color: #ffcc99;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.barra-lateral {
+    grid-area: barra-lateral;
+    background-color: #cccccc;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.pie-pagina {
+    grid-area: pie-pagina;
+    background-color: #ffcccc;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+/* Aseguramos que el contenido ocupe espacio completo en la fila */
+main, aside {
+    height: 100%;
+}
